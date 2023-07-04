@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somesh - Developer Porfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(206, 27, 212);
+            color: rgb(238, 238, 238);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(10, 14, 2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+
+            list-style-type: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(109, 109, 231);
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(240, 133, 195);
+            height: 1.1px;
+            margin: 70px 100px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.8rem;
+            margin: 70px 0;
+        }
+
+        .rightSection img {
+            width: 130%;
+        }
+
+        .purple {
+            color: rgb(7, 5, 5)
+        }
+
+        #element {
+            color: rgb(7, 5, 5);
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            margin: auto;
+            height: 50vh;
+        }
+
+        .secondSection {
+            font-size: 1.3rem;
+        }
+
+        .text-gray {
+            color: rgb(5, 1, 1);
+        }
+
+        .text-gray {
+            font-size: 1rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 70px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 1.5px;
+            color: black;
+        }
+
+        .leftSection .btn {
+            padding: 10px;
+            background-color: rgb(116, 146, 202);
+            color: black;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn:hover {
+            margin: 1.2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Somesh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://github.com/SomeshTiwariii">GitHub</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="https://surveyheart.com/form/64a329e6a2b3085e44dd872f">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class=purple>Somesh Tiwari,</span>
+                <div>I'm a Web Developer</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1xIGJrWSkx_0-NN0Fg-f7JhmtW-TvWT-u/view?usp=drivesdk">
+                    <button class="btn">DOWNLOAD RESUME</button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/somesh-tiwari-63559618a">
+                    <button class="btn">LinkedIn</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">Things I Know</span>
+            <h1>LANGUAGES</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        HTML-CSS JAVASCRIPT
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        C++
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        PYTHON
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        JAVA
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>CREATING</i> LOGICS', '&amp; DEVELOPING FUTURE'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</body>
+
+</html>
